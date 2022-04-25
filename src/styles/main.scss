@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Variavles*/
+$main:rgb(137, 137, 137);
+$acsent: rgb(43, 112, 139);
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $main;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart {
+    margin: 0 auto;
+    max-width: 1800px;
+    padding: 0 20px;
+
+    &-breadcrumps {
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:not(:last-of-type)::after {
+                padding: 0 10px;
+                content: "→";
+                color: $main;
+            }
+
+            &--active {
+                color: black;
+                font-weight: 500;
+                font-size: 30px;
+
+
+                &> ::after {
+                    width: 36px;
+                    color: black;
+                }
+            }
+        }
+
+    }
+
+    &-block {
+
+        padding: 40px;
+        border: 1px solid $main;
+        display: flex;
+        font-weight: 500;
+        min-height: 100px;
+
+        &__text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &__icon {
+                width: 30px;
+                height: 30px;
+                border: 3px solid rgb(250, 60, 60);
+                transform: rotate(45deg);
+                margin-right: 30px;
+
+                &-svg {
+                    transform: rotate(-45deg);
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            &__descr {
+                max-width: 380px;
+                &-header {
+                    font-size: 22px;
+                }
+
+                &-button {
+                    max-width: 180px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    &-distance {
+                        color: $main;
+                    }
+
+                    &-details {
+                        display: flex;
+                        align-items: center;
+                        color: $acsent;
+
+                        &-cont {
+                            height: 15px;
+                            width: 15px;
+
+                            &-svg {
+                                stroke: $acsent;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &__option {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 92px;
+            color: $main;
+
+            &-text {
+                text-transform: uppercase;
+            }
+
+            &-checkbox {
+                display: flex;
+                justify-content: space-between;
+
+                &-block__form {
+                    display: flex;
+                    justify-content: space-between;
+                    min-width: 100px;
+                    margin-right: 20px;
+
+                    &>input {
+                        margin-right: 3%;
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    &-text>span {
+                        display: flex;
+                        font-display: column;
+                        justify-content: space-between;
+                        min-height: 30px;
+
+                        &:last-child {
+                            color: black;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
+
+            &-block {
+                width: 35px;
+                height: 35px;
+                border: 3px solid $acsent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &-svg {
+                    stroke: $acsent;
+                    height: 80%;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .cart-block {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__option {
+            display: flex;
+        }
+    }
+}
