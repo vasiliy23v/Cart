@@ -70,17 +70,11 @@ body {
 
         &__left {
             &__icon {
-                width: 30px;
-                height: 30px;
-                border: 3px solid rgb(250, 60, 60);
-                transform: rotate(45deg);
-                margin-right: 30px;
-
-                &-svg {
-                    transform: rotate(-45deg);
-                    width: 30px;
-                    height: 30px;
-                }
+                background: url("../images/images/svg-editor-image.svg");
+                width: 60px;
+                height: 60px;
+                background-size: 100%;
+                margin-right: 20px;
             }
         }
 
@@ -119,10 +113,8 @@ body {
                         &-cont {
                             height: 15px;
                             width: 15px;
-
-                            &-svg {
-                                stroke: $acsent;
-                            }
+                            background-image: url('../images/images/arrowupright_icon-icons.com_61184.svg');
+                            background-size: 100%;
                         }
                     }
                 }
@@ -151,11 +143,12 @@ body {
                     justify-content: space-between;
                     min-width: 100px;
 
-                    &>input {
+                    &-radio>input {
                         margin-right: 3%;
                         width: 16px;
                         height: 16px;
                     }
+
 
                     &-text>span {
                         display: flex;
@@ -183,16 +176,9 @@ body {
             &-block {
                 width: 35px;
                 height: 35px;
-                border: 3px solid $acsent;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                &-svg {
-                    stroke: $acsent;
-                    height: 80%;
-                    width: 80%;
-                }
+                border: 3px solid $acsent;  
+                background-image: url('../images/images/arrowdown_icon-icons.com_61188.svg');
+                background-size: 100%;
             }
         }
     }
@@ -208,6 +194,7 @@ body {
     .cart-breadcrumps {
         overflow: scroll;
     }
+
     .cart-block {
         &__option {
             flex-direction: row;
@@ -223,7 +210,7 @@ body {
         }
 
         &__text__descr {
-            max-width: none;
+            max-width: unset;
             justify-content: space-between;
             min-height: 60px;
             gap: 10px;

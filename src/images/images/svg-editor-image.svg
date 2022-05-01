@@ -1,0 +1,16 @@
+<svg width="91" height="91" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+   </g>
+
+ <g>
+  <title>Layer 1</title>
+  <g stroke="rgb(250, 60, 60)">
+   <path fill="rgb(250, 60, 60)" stroke="rgb(250, 60, 60)" d="m57.736739,41.90096c0,-6.778194 -5.458545,-12.236739 -12.236739,-12.236739c-6.778194,0 -12.236739,5.458545 -12.236739,12.236739c0,6.778194 12.236739,19.43482 12.236739,19.43482s12.236739,-12.656627 12.236739,-19.43482zm-17.93522,-0.239936c0,-3.119169 2.579313,-5.698481 5.698481,-5.698481c3.119169,0 5.698481,2.519329 5.698481,5.698481c0,3.119169 -2.519329,5.698481 -5.698481,5.698481c-3.119169,0 -5.698481,-2.579313 -5.698481,-5.698481z"/>
+  </g>
+  <line fill="rgb(250, 60, 60)" stroke="rgb(250, 60, 60)" stroke-width="3" x1="46.836923" y1="1.00222" x2="3.633826" y2="44.205316" id="svg_3" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="rgb(250, 60, 60)" stroke="rgb(250, 60, 60)" stroke-width="3" x1="88.07024" y1="1.194899" x2="44.867144" y2="44.397995" id="svg_5" stroke-linejoin="undefined" stroke-linecap="undefined" transform="rotate(90 66.46871948242189,22.796451568603523) "/>
+  <line fill="rgb(250, 60, 60)" stroke="rgb(250, 60, 60)" stroke-width="3" x1="46.836923" y1="42.235539" x2="3.633827" y2="85.438635" id="svg_8" stroke-linejoin="undefined" stroke-linecap="undefined" transform="rotate(90 25.235378265380856,63.83706665039063) "/>
+  <line fill="rgb(250, 60, 60)" stroke="rgb(250, 60, 60)" stroke-width="3" x1="88.07024" y1="42.235537" x2="44.867144" y2="85.438633" id="svg_9" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+ </g>
+</svg>
